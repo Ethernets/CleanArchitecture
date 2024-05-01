@@ -54,6 +54,12 @@ dependencies {
     implementation(libs.coroutinesCore)
 
     implementation(libs.dagger)
+    implementation(libs.navFragment)
+    implementation(libs.navUi)
+
+    implementation(libs.room)
+    implementation(libs.roomKtx)
+    implementation(libs.roomCompiler)
     annotationProcessor(libs.daggerCompiler)
 
 }

@@ -8,29 +8,27 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.cleararchitecture.R
 import com.example.cleararchitecture.databinding.FragmentListBinding
+import com.example.cleararchitecture.databinding.FragmentNoteBinding
 
-class ListFragment : Fragment() {
-    private lateinit var viewBinding: FragmentListBinding
+class NoteFragment : Fragment() {
+    private lateinit var viewBinding: FragmentNoteBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewBinding = FragmentListBinding.inflate(inflater, container, false)
+        viewBinding = FragmentNoteBinding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
         return viewBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewBinding.addNoteButton.setOnClickListener {
-            goToNoteDetails()
+        viewBinding.checkButton.setOnClickListener {
+            findNavController().popBackStack()
         }
-    }
-
-    private fun goToNoteDetails(id: Long = 0L){
-        val action = ListFragmentDirections.actionGoToNote(id)
-        findNavController().navigate(action)
     }
 }
