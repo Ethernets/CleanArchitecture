@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="standart_margin">15dp</dimen>
+    <dimen name="layout_height">100dp</dimen>
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
 </resources>

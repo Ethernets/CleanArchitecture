@@ -1,11 +1,8 @@
 [versions]
-agp = "8.3.2"
+agp = "8.4.0"
 kotlin = "1.9.22"
 coreKtx = "1.13.0"
 ksp = "1.9.22-1.0.17"
-junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
 appcompat = "1.6.1"
 material = "1.11.0"
 activity = "1.9.0"
@@ -16,27 +13,25 @@ glide_version = "4.16.0"
 nav_version = "2.7.7"
 daggerVersion = "2.51.1"
 jetbrainsKotlinJvm = "1.9.22"
+lifecycleViewmodelCompose = "2.7.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+#androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+#androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+#androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
 coroutinesCore = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
-room = { group = "androidx.room", name = "room-runtime", version.ref = "room_version" }
 roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room_version" }
-roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "room_version" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room_version" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide_version" }
 navFragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "nav_version" }
 navUi = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav_version" }
 
 dagger = { group = "com.google.dagger", name = "dagger", version.ref = "daggerVersion" }
 daggerCompiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "daggerVersion" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 
 
 

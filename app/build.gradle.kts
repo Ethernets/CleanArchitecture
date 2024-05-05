@@ -45,21 +45,20 @@ android {
 dependencies {
     implementation(project(":core"))
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
+    //implementation(libs.androidx.activity)
+   // implementation(libs.androidx.constraintlayout)
 
-    implementation(libs.coroutines.android)
+  //  implementation(libs.coroutines.android)
     implementation(libs.coroutinesCore)
 
     implementation(libs.dagger)
+    ksp(libs.daggerCompiler)
     implementation(libs.navFragment)
     implementation(libs.navUi)
 
-    implementation(libs.room)
-    implementation(libs.roomKtx)
-    implementation(libs.roomCompiler)
-    annotationProcessor(libs.daggerCompiler)
+    implementation(libs.room.ktx)
+    ksp(libs.roomCompiler)
+    //annotationProcessor(libs.daggerCompiler)
 
 }
